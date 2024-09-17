@@ -1,0 +1,237 @@
+<html>
+<head>
+    <link rel="stylesheet" href="gp.css">
+    <title>GPREC</title>
+    <style>
+        /* General reset and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Floating text styles */
+        .floating-text {
+            color: #FFA500; /* Orange text color */
+            font-size: 60px; /* Larger font size */
+            font-weight: bold; /* Make the text bold */
+            animation: float 3s ease-in-out infinite; /* Floating animation */
+            margin-bottom: 20px; /* Space between text and button */
+            margin-top: 100px; /* Move text down to avoid navbar overlap */
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Image container and transition */
+        .image-container {
+            width: 90%; /* Full width with padding adjustment */
+            max-width: 1200px; /* Max width to prevent stretching */
+            height: 500px; /* Increased height */
+            margin: 20px auto; /* Center the container with margin */
+            position: relative;
+            overflow: hidden;
+            padding: 20px; /* Padding around the container */
+            background: #fff; /* Optional background color */
+        }
+
+        .banner-image {
+            width: calc(100% - 40px); /* Adjust width to account for padding */
+            height: calc(100% - 40px); /* Adjust height to account for padding */
+            position: absolute;
+            top: 20px; /* Position considering padding */
+            left: 20px; /* Position considering padding */
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            border-radius: 10px; /* Optional rounded corners */
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Optional shadow */
+        }
+	.jm {
+		margin: 20px 200px 70px 200px;
+	}
+        .banner-image:nth-child(1) {
+            animation: fade 9s infinite;
+        }
+
+        .banner-image:nth-child(2) {
+            animation: fade 9s 3s infinite;
+        }
+
+        .banner-image:nth-child(3) {
+            animation: fade 9s 6s infinite;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            25% { opacity: 1; }
+            75% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Center the navbar horizontally */
+            align-items: center;
+            padding: 10px 0; /* Padding for height */
+        }
+
+        .navbar img {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: Orange;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: orange;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: orange;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Styling for the YouTube video section */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the videos */
+            margin: 20px auto;
+        }
+
+        .video-container iframe {
+            width: 300px;
+            height: 200px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Optional shadow */
+        }
+        /* Styling for video figure and caption */
+.video-container figure {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.video-container figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+    </style>
+</head>
+<body style="background-color:White;">
+
+<div class="navbar">
+    <img src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec_logo1.png" align="left">
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Departments</button>
+        <div class="dropdown-content">
+            <a href="CSE.html">Department of Computer Science and Engineering (CSE)</a>
+            <a href="CAI.html">Department of Artificial Intelligence (CS-AI)</a>
+            <a href="CSD.html">Department of Data Science (CDS)</a>
+        </div>
+    </div>
+    <a href="aboutus.html">About College</a>
+    <div class="dropdown">
+        <button class="dropbtn">Examination</button>
+        <div class="dropdown-content">
+            <a href="schemes.html">Schemes</a>
+            <a href="results.html">Results</a>
+            <a href="schedule.html">Schedule</a>
+        </div>
+    </div>
+    <a href="contactus.html">Contact Us</a>
+    <a href="https://examcell.gprec.ac.in/studentdetails/studentdetailslogin.aspx">Student/parent login</a>
+</div>
+
+<!-- Floating text -->
+<div>
+    <div class="floating-text">Welcome to GPREC</div>
+</div>
+
+<!-- Image transition -->
+<div class="image-container">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.ggMPKPkcmCHJW-3WB3nNngHaCe&pid=Api&P=0&h=220" class="banner-image" alt="Image 1">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.TnBoiB0eZAMOFcexGjYqrgHaEK&pid=Api&P=0&h=220" class="banner-image" alt="Image 2">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.7Yhdfr_EZRW4XM0bJyjvOQHaE8&pid=Api&P=0&h=220" class="banner-image" alt="Image 3">
+</div>
+<div class="jm" align="Center">
+<p>Welcome to G. Pulla Reddy Engineering College (GPREC), a beacon of excellence in engineering education. Accredited by NBA and NAAC with an ‘A’ grade, GPREC is renowned for its academic achievements, cutting-edge research, and strong industry collaborations. Our students consistently excel in competitive exams and secure placements in top global companies. With state-of-the-art infrastructure and a focus on holistic development, GPREC nurtures future leaders and innovators ready to make a significant impact on society.</p>
+</div>
+<!-- YouTube Videos -->
+<div class="video-container">
+    <figure>
+        <iframe src="https://www.youtube.com/embed/jsnaibIZoH8" title="GPREC x TEDx"></iframe>
+        <figcaption><b>GPREC x TEDx</b></figcaption>
+    </figure>
+    <figure>
+        <iframe src="https://www.youtube.com/embed/6ehrDzVq0SU" title="Innovation Center"></iframe>
+        <figcaption><b>Innovation Center</b></figcaption>
+    </figure>
+    <figure>
+        <iframe src="https://www.youtube.com/embed/WJCvt1fyUqY" title="Campus Life at GPREC"></iframe>
+        <figcaption><b>Campus Life at GPREC</b></figcaption>
+    </figure>
+</div>
+</body>
+</html>

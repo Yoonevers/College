@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>schedule</title>
+<link rel="stylesheet" href="gp.css">
+<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color: rgb(16, 16, 16);
+ border: 1px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ transform:translateX(100%);
+ animation: scroll-left 10s linear infinite;
+}
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%); 		
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
+
+</style>
+<head>
+    <body>
+        <div class="navbar">
+            <img src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec_logo1.png" align="left">
+              <a href="home.html">Home</a>
+              <div class="dropdown">
+                <button class="dropbtn">Departments </button>
+                <div class="dropdown-content">
+                  <a href="CSE.html">Department of Computer science and Engineering(CSE)</a>
+                  <a href="CAI.html">Department of Artificial Intelligence(CS-AI)</a>
+                  <a href="CSD.html">Department of Data Science(CDS)</a>
+                </div>
+              </div> 
+            <a href="aboutus.html">About College</a>
+              <div class="dropdown">
+                <button class="dropbtn">Examination </button>
+                <div class="dropdown-content">
+                  <a href="schemes.html">Schemes</a>
+                  <a href="results.html">Results</a>
+                  <a href="schedule.html">Schedule</a>
+                </div>
+              </div> 
+            <a href="contactus.html">Contact Us</a>
+            <a href="https://examcell.gprec.ac.in/studentdetails/studentdetailslogin.aspx">Student/parent login</a>
+            </div>
+<div class="scroll-left">
+<p>1st session will be 23/09/2024 and 2nd sessional wiil be 28/11/2024 </p>
+</div>
+</head>
+
+</html>

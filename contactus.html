@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gp.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-section, .contact-section {
+            margin-bottom: 20px;
+        }
+        .form-section h2, .contact-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .contact-section {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .contact-info .contact-item {
+            flex: 1 1 200px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        .contact-info .contact-item h3 {
+            margin: 0 0 10px;
+            color: #007bff;
+        }
+        .contact-info .contact-item p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .contact-info .contact-item i {
+            margin-right: 8px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="navbar">
+    <img src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec_logo1.png" align="left">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Departments</button>
+        <div class="dropdown-content">
+            <a href="CSE.html">Department of Computer Science and Engineering (CSE)</a>
+            <a href="CAI.html">Department of Artificial Intelligence (CS-AI)</a>
+            <a href="CSD.html">Department of Data Science (CDS)</a>
+        </div>
+    </div>
+    <a href="aboutus.html">About College</a>
+      <div class="dropdown">
+        <button class="dropbtn">Examination </button>
+        <div class="dropdown-content">
+          <a href="schemes.html">Schemes</a>
+          <a href="results.html">Results</a>
+          <a href="schedule.html">Schedule</a>
+        </div>
+      </div> 
+    <a href="contactus.html">Contact Us</a>
+    <a href="https://examcell.gprec.ac.in/studentdetails/studentdetailslogin.aspx">Student/parent login</a>
+    </div>
+    <div class="container">
+        <!-- Contact Form -->
+        <div class="form-section">
+            <h2>Send Us a Message</h2>
+            <form action="your-server-side-script" method="post">
+                <div class="form-group">
+                    <label for="name" align="Left">Name</label>
+                    <input type="text" id="name" name="name" placeholder="abc" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" align="Left">Email</label>
+                    <input type="email" id="email" name="email" placeholder="abc@gamil.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" align="Left">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" align="Left">Message</label>
+                    <textarea id="message" name="message" placeholder="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-section">
+            <h2>Contact Details</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Education & Certificate Verification</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@gprec.ac.in">info@gprec.ac.in</a></p>
+                    <p><i class="fas fa-phone"></i> 08518 - 270957</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Admissions</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:admissions@gprec.ac.in">admissions@gprec.ac.in</a></p>
+                    <p><i class="fas fa-phone"></i> 9493458458</p>
+                    <p>((Dr.V. Raghavendra Prasad)</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Exam Section</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:coe@gprec.ac.in">coe@gprec.ac.in</a></p>
+                    <p><i class="fas fa-phone"></i> 9705262830</p>
+                    <p>(Sri A. Thammi Reddy)</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Placement Cell</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:tpo@gprec.ac.in">tpo@gprec.ac.in</a></p>
+                    <p><i class="fas fa-phone"></i> 08518-271054</p>
+                    <p>(Office)</p>
+                </div>
+                <hr/>
+                <p><b>How to Reach:</b> Kurnool is connected by NH-7 (Hyderabad-Bangalore National Highway) There are direct trains and buses to this place from important cities like Hyderabad, Bangalore and Chennai. It is 3 hours journey from Hyderabad, 5 hours from Bangalore and 10 hours from Chennai.
+
+<p><b>How to reach the College:</b> It is about 8 to 10 km from Kurnool bus-stand / Railway Station / Important Hotels in the town. The college is located on Nandyal Road.</p>
+<h2>Our Location</h2>
+    <p>
+        <span style="font-size: 24px;">📍</span>  General Mailing Address
+<p>G.PULLA REDDY ENGINEERING COLLEGE (Autonomous)
+<p>G.Pulla Reddy Nagar, Nandyal Road,  KURNOOL – 518 007, AP, India. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
