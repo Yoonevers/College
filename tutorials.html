@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - urTutor</title>
+    <link rel="stylesheet" href="s1.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar with urTutor logo and search bar -->
+<nav class="navbar">
+    <h1>urTutor</h1>
+    <div class="nav-links">
+        <a href="#">Tutorials</a>
+        <a href="#">Resources</a>
+        <a href="#">Forum</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">&#128269;</button> <!-- Search icon -->
+    </div>
+</nav>
+
+<!-- Rest of your HTML content -->
+
+    </header>
+    
+    <main class="container">
+        <section class="tutorials beginner">
+            <h2>Beginner Tutorials</h2>
+            <div class="tutorial-row">
+                <div class="tutorial-item" onclick="openTutorial('C')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS25oYJlp2wL_GAT2FOKBaOlCt1fbn56-hXDg&s" alt="C">
+                    <h3>C</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('Java')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                    <h3>Java</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('Python')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python">
+                    <h3>Python</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('R')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1200px-R_logo.svg.png" alt="R">
+                    <h3>R</h3>
+                </div>
+            </div>
+        </section>
+        <br>
+	<br>
+	<br>
+	<br>
+	<br>
+        <section class="tutorials intermediate">
+            <h2>Intermediate Tutorials</h2>
+            <div class="tutorial-row">
+                <div class="tutorial-item" onclick="openTutorial('DataStructures')">
+                    <img src="https://miro.medium.com/v2/resize:fit:350/0*xmecyKNlbZKinBDs.png" alt="Data Structures">
+                    <h3>Data Structures</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('Algorithms')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF322M5vYDhTLe9L0J92rxU9SwnUTCAyXGReo6FCY44Uc7IiTebIlg2JaDjoCArOImHeU&usqp=CAU" alt="Algorithms">
+                    <h3>Algorithms</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('AI')">
+                    <img src="https://png.pngtree.com/templates/sm/20180519/sm_5b001cfa899b9.jpg" alt="AI">
+                    <h3>AI</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('ML')">
+                    <img src="https://nyesteventuretech.com/images/Machine-Learning.jpg" alt="ML">
+                    <h3>ML</h3>
+                </div>
+            </div>
+        </section>
+        <br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+        <section class="tutorials advanced">
+            <h2>Advanced Tutorials</h2>
+            <div class="tutorial-row">
+                <div class="tutorial-item" onclick="openTutorial('Cybersecurity')">
+                    <img src="https://i.pinimg.com/550x/48/3a/6c/483a6c355deffde74c84cb5ca2636ee4.jpg" alt="Cybersecurity">
+                    <h3>Cybersecurity</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('DataScience')">
+                    <img src="https://w7.pngwing.com/pngs/338/951/png-transparent-data-science-analytics-r-data-analysis-data-science-blue-text-trademark.png" alt="Data Science">
+                    <h3>Data Science</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('WebDevelopment')">
+                    <img src="https://png.pngtree.com/png-vector/20220701/ourmid/pngtree-web-development-blue-gradient-concept-icon-programming-logo-software-vector-png-image_47412110.jpg" alt="Web Development">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="tutorial-item" onclick="openTutorial('Linux')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5neqMfYB2_8eZayqJLdkAUKV1zIa9GimpDg&s" alt="Linux">
+                    <h3>Linux</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function openTutorial(tutorialName) {
+            alert(`Opening ${tutorialName} tutorial...`);
+            // Here you can implement logic to open a specific tutorial, e.g., redirect or load content dynamically.
+        }
+    </script>
+</body>
+</html>

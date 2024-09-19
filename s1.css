@@ -1,0 +1,130 @@
+/* Center all tutorial sections and give padding to avoid border overlap */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Universal styling for all tutorial rows */
+.tutorial-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Universal styling for all tutorial items */
+.tutorial-item {
+    width: 180px;
+    height: 230px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.tutorial-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.tutorial-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tutorial-item:hover {
+    transform: scale(1.08);
+}
+
+/* Apply background color and improve spacing for all h2 elements */
+.tutorials h2 {
+    text-align: center;
+    background-color: #ffcc00; /* Yellow background color */
+    margin: 0;  /* No margins to avoid extra space */
+    padding: 20px 0;  /* Padding to create vertical space */
+    font-size: 1.5rem;
+    color: #333;  /* Darker text color for better contrast */
+    border-radius: 5px; /* Slightly rounded corners for a polished look */
+}
+
+/* Navbar adjustment to align urTutor on the left and search bar on the right */
+.navbar {
+    display: flex;
+    justify-content: space-between;  /* Adjust to space out items */
+    align-items: center;  /* Center vertically */
+    padding: 10px 20px; /* Padding to space out the navbar */
+    background-color: #333; /* Dark background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Style the links in the navbar */
+.navbar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* urTutor logo styling */
+.navbar h1 {
+    padding: 0px 0px 0px 300px;
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 200px 0px 0px;
+}
+
+.search-bar input {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 200px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Ensure proper spacing from the screen edges */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Ensure content isn't hidden behind the navbar */
+}
+
